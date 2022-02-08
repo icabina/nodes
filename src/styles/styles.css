@@ -1,0 +1,105 @@
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 650px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+td {
+  padding: 12px;
+}
+
+h2 {
+  color: #5bb7db;
+}
+
+.savings {
+  color: #60b044;
+}
+.loss {
+  color: #ff0000;
+}
+input.small {
+  width: 46px;
+}
+td.fuel-savings-label {
+  width: 175px;
+}
+
+
+.fila, .fila * {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+	-webkit-transition: all .2s ease-in-out !important;
+	-moz-transition: all .2s ease-in-out !important;
+	transition: all .2s ease-in-out !important;	
+  text-align: left;
+}
+.fila{
+	width: 100%;
+	float: left;
+	text-align: center;
+	position: relative;
+	font-size: 0px;
+}
+.fila.pads{
+  padding-top: 50px;
+}
+.col h1{
+	font-size: 40px;
+	font-weight: 600;
+	margin: 0 0 30px 0;
+	color: #333;
+}
+.fila h2{
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	color: #333;
+	text-transform: uppercase;
+	margin: 0 0 7px 0 !important;
+}
+.fila h3{
+	font-size: 14px;
+	color: #999;
+	line-height: 18px;
+	margin: 0 0 15px 0 !important;
+}
+.fila h4{
+	font-size: 14px;
+}
+.fila h5{
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	color: #2f95b8;
+	text-transform: uppercase;
+	margin: 0 0 7px 0;
+}
+.fila p{
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+  text-align: justify;
+  margin: 0 0 0px 0 !important;
+}
+.item{
+	background-color: #fff !important;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2) !important;
+	padding: 17px 17px 0px 17px !important;
+	border-radius: 5px !important;
+	margin: 0 0 20px 0 !important;
+	border: 0px !important;
+}
+.note{
+	background-color: #ddd;
+	padding: 13px !important;
+	display: inline-block;
+	float: left;
+	margin: 0 0 10px 0 !important;
+}
