@@ -12,12 +12,25 @@ describe("Reducers::Nodes", () => {
     return initialState().nodes;
   };
 
-  const nodeA: Node = {
+  const nodeA = {
     url: "http://localhost:3002",
     online: false,
     name: "Node 1",
     loading: false,
-    notes: [],
+    notes: [
+          {
+            number: "001",
+            text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+          },
+          {
+            number: "002",
+            text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+          },
+          {
+            number: "003",
+            text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+          },
+        ],
   };
 
   const nodeB = {
@@ -25,7 +38,20 @@ describe("Reducers::Nodes", () => {
     online: false,
     name: "Node 2",
     loading: false,
-    notes: [],
+    notes: [
+      {
+        number: "010",
+        text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+      },
+      {
+        number: "011",
+        text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+      },
+      {
+        number: "012",
+        text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+      },
+    ],
   };
 
   it("should set initial state by default", () => {
@@ -35,7 +61,7 @@ describe("Reducers::Nodes", () => {
     expect(reducer(undefined, action)).toEqual(expected);
   });
 
-  /* it("should handle checkNodeStatus.pending", () => {
+  it("should handle checkNodeStatus.pending", () => {
     const appState = {
       list: [nodeA, nodeB],
     };
@@ -103,10 +129,10 @@ describe("Reducers::Nodes", () => {
     };
 
     expect(reducer(appState, action)).toEqual(expected);
-  }); */
+  });
 });
 
-/* describe("Actions::Nodes", () => {
+describe("Actions::Nodes", () => {
   const dispatch = jest.fn();
 
   afterAll(() => {
@@ -119,6 +145,20 @@ describe("Reducers::Nodes", () => {
     online: false,
     name: "Node 1",
     loading: false,
+    notes: [
+      {
+        number: "010",
+        text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+      },
+      {
+        number: "011",
+        text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+      },
+      {
+        number: "012",
+        text: "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+      },
+    ]
   };
 
   it("should fetch the node status", async () => {
@@ -163,4 +203,4 @@ describe("Reducers::Nodes", () => {
 
     expect(dispatch.mock.calls.flat()).toEqual(expected);
   });
-}); */
+});

@@ -8,6 +8,9 @@ export interface NodesState {
   list: Node[];
 }
 
+
+
+
 export const checkNodeStatus = createAsyncThunk(
   "nodes/checkNodeStatus",
   async (node: Node) => {

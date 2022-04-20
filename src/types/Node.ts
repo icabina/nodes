@@ -1,7 +1,11 @@
 export interface Node {
+  url: string;
   online: boolean;
   name: string;
-  url: string;
   loading: boolean;
-  notes: [];
+  notes: {
+      number: string;
+      text: string;
+  }[];
 }
+
